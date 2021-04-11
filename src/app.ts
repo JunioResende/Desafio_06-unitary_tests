@@ -3,11 +3,13 @@ import 'express-async-errors';
 
 import express from 'express';
 import cors from 'cors';
+import createConnection from './database';
 
-import './database';
 import './shared/container';
 import { router } from './routes';
 import { AppError } from './shared/errors/AppError';
+
+createConnection();
 
 const app = express();
 

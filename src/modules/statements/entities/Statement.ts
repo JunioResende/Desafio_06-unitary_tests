@@ -48,3 +48,5 @@ export class Statement {
     }
   }
 }
+
+export { OperationType }
